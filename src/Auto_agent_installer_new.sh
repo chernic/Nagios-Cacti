@@ -1,10 +1,3 @@
-#! /bin/bash
-#+-------------------------------------------------------------------------+
-# Author: Team @ Hooduku for Hooduku Cloud
-# Date : 09 SEP 2010
-# Purpose: This Script automates the setting up of Nagios and Cacti Agents on every Instance.
-# Send feedback to info@hooduku.com
-#+-------------------------------------------------------------------------+
 SERVER_IP="174.143.168.120"
 LOCAL_IP=`/sbin/ifconfig eth0 | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`
 FTP_USER="flexi"
